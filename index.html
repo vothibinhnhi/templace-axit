@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <title>Demo-templace</title>
+    
 </head>
 <body>
     <div id="main">
@@ -18,7 +20,7 @@
                         <div class="navbar-logo ">
                             <img src="./assets/img/logo/logo_navbar.png" alt="" class="logo-navbar">  
                         </div>
-                        <ul class="nav navbar-right">
+                        <ul class="nav navbar-right  ">
                             <li><a href="#features">Features</a></li>
                             <li><a href="#about">About</a></li>
                             <li><a href="#pricing">Pricing</a></li>
@@ -61,7 +63,7 @@
             </div> 
         </div>
         <div id="brand-banel">
-            <div class="row">
+            <div class="row ">
                 <div class="pane-state-left col-40 s-col-20 mb-col-full ">
                     <p class="heading-pane" >Social Media</p>
                     <p class="text-pane" >Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Aenean euismod bibendum laoreet.</p>
@@ -86,16 +88,31 @@
                 <div id="features" class="row">
                     <div class="col-60 features1-left s-col-full ">
                         <div class="box-features1 mb-col-full ">
-                            <button class="tab tab0 ">TAB 1</button>
-                            <button class="tab tab1 ">TAB 2</button>
-                            <button class="tab tab2 ">TAB 3</button>
+                            <button class="tab tab0 tablink axit-color-box  "
+                            onclick="openTab(event,'Tab1')">Tab1</button>
+                            <button class="tab tab1 tablink" 
+                            onclick="openTab(event,'Tab2')">Tab2</button>
+                            <button class="tab tab2 tablink"
+                            onclick="openTab(event,'Tab3')">Tab3</button>
                         </div>
-                        <div class="text-featuress ">
+                        <div id="Tab1" class="text-featuress tabb">
                             <span class="heading-features1">Tabs with soft transitioning effect.</span><br>
                             <div class="line "></div>
                             <p class="text-features1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean <br>euismod bibendum laoreet. Proin gravida dolor sit amet lacus <br>accumsan et viverra justo commodo. Proin sodales pulvinar tempor.<br> Cum sociis natoque penatibus et magnis dis parturient montes.</p><br>
                             <p class="text-features2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean<br> euismod bibendum laoreet.</p><br>
                             <input class="content-btn text-center mb-col-full" type="submit" value="Call to Action">
+                        </div>
+                        <div id="Tab2" class="text-featuress tabb " style="display:none">
+                            <span class="heading-features1">Tab 2 Headline</span><br>
+                            <div class="line "></div>
+                            <p class="text-features1">Vide augue no quo. Ex gubergren necessitatibus eos, usu munere partem ei, ne dolores scaevola definitionem qui. Nec dolore nostro id. Ad ius scripta complectitur. Vel graeco lobortis conceptam ex. Ut justo eirmod alienum est, te pri quando quaerendum.</p><br>
+                            <p class="text-features2">Prima facilis omnesque sea cu, has brute timeam eligendi ex. Nec virtute eripuit legimus an. Cum cetero quaerendum in. Nam ea habeo dolorum accumsan, homero dissentiet est ea.</p><br>
+                        </div>
+                        <div id="Tab3" class="text-featuress  tabb"  style="display:none">
+                            <span class="heading-features1">Tab 3 Headline</span><br>
+                            <div class="line "></div>
+                            <p class="text-features1">Nec elit scaevola consetetur in, cu meliore deterruisset duo. Novum iusto disputationi cu mea, nec ad nonumy doctus consequat, fabulas similique pri te. Ei ius suas theophrastus, utinam ridens audire duo ea, no solet menandri nam. </p><br>
+                            <p class="text-features2">Per at impetus diceret, detracto recteque persecuti eum ne, diceret facilisi consulatu has id. Cetero rationibus constituto ea quo, ex pri mutat propriae vituperatoribus. Eum ad feugiat democritum cotidieque. Legere praesent periculis ex pro. At per tantas reformidans, ex laoreet partiendo constituam eum, nam commune...</p><br>
                         </div>
                     </div> 
                     <div class="col-40 features1-right">
@@ -397,9 +414,43 @@
         </div>
         <div class="row">
             <div class="default">
-                <a href="#"><i class="ti-angle-up"></i></a>
-            </div>
+                <button class="scrollToTop"><i class="ti-angle-up "></i></button>
+            </div>      
         </div>
     </div>
+    <script>
+
+        // onclick tab
+        function openTab(evt, tabName) {
+          var i, x, tablinks;
+          x = document.getElementsByClassName("tabb");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" axit-color-box", "");
+          }
+          document.getElementById(tabName).style.display = "block";
+          evt.currentTarget.className += " axit-color-box";
+        }
+
+        // onclick scrollTop
+        $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollToTop').fadeIn();
+        } else {
+            $('.scrollToTop').fadeOut();
+        }
+        });
+        $('.scrollToTop').click(function() {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+        
+    </script>
+
 </body>
 </html>

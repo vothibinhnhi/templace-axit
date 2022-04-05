@@ -17,6 +17,9 @@ html{
 .text-white{
     color: #fff !important;
 }
+.axit-color-box{
+    background-color: #ff8b38 !important;
+}
 .br-col-white{ background-color: #fff !important;}
 .br-col{
     background-color: rgba(245, 245, 245, 1) !important;
@@ -63,13 +66,15 @@ html{
 }
 /* header */
 
+
 /* navbar */
 .navbar{
     top: 0;
     left: 0;
     right: 0;
     position: absolute;
-    height: 72px;
+    /* height: 72px; */
+    max-width: 100%;
     background-color: black;
     margin-left: auto;
     margin-right: auto;
@@ -113,12 +118,11 @@ html{
 #header{
     position: relative;
     height: 713px;
-    background: url('../img/header-panel.jpg')top center/cover no-repeat;
+    background: url('../img/header-panel.jpg') top center/cover no-repeat;
     background-attachment: fixed;
     background-color: rgba(0, 0, 0, 0.4);
     margin-left: auto;
     margin-right: auto;
-    
 }
 #header .header-left{
     float: left;
@@ -342,6 +346,7 @@ html{
    float: right;
 }
 #content .tab{
+    cursor: pointer;
     width: 110px;
     height: 110px;
     color: #fff;
@@ -353,11 +358,7 @@ html{
     padding-top: 5px;
     
 }
-#content .tab0{
-    background-color: #ff8b38 !important;
-    margin-bottom: 2px;
-    
-}
+#content .tab0,
 #content .tab1{
     margin-bottom: 2px;
 }
@@ -413,7 +414,7 @@ html{
     margin-right: auto;
 }
 .features2{
-    height: 596px;
+    /* height: 596px; */
 }
 
 .features2-left-img{
@@ -493,7 +494,7 @@ html{
 .features3{
     left: 0px;
     top: 0px;
-    height: 524px;
+    /* height: 524px; */
 }
 /* /About  */
 #about {
@@ -663,7 +664,7 @@ html{
     font-weight: 400;
     font-size: 14px;
     line-height: 40px;
-    box-shadow: 0px 0.5px 0.1px 1px #cccccc;
+    box-shadow: 0px 0.5px 1px 1px #cccccc;
     display: block;
 }
 /* Reviews */
@@ -738,7 +739,7 @@ html{
     height: 320px;
     color: #fff;
     text-align: center;
-    background: url('../img/custom-panel.jpg')top center/cover no-repeat ;
+    background: url('../img/custom-panel.jpg') top center/cover no-repeat ;
     background-attachment: fixed;
 }
 .stylish-br{
@@ -889,20 +890,17 @@ html{
     margin-left: 90%;
     margin-top: -125px;
 }
-
-.default a{
+.scrollToTop{
     color: #fff;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
+    background-color: #ff8b38;
+    border: none;
     font-family: 'FontAwesome Regular', 'FontAwesome';
     text-decoration: none;
+    cursor: pointer;
 }
-
-@keyframes modalFadeIn{
-    form{  
-        transform: translateY(-100px);
-    }
-    to{
-        transform: translateY(0);
-    }
+.default:hover{
+    display: block;
+    opacity: 0.9;
 }
