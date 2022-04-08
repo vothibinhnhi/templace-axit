@@ -14,37 +14,39 @@
 <body>
     <div id="main">
         <div id="header">
-            <div class="header-br">
-                <div class="row">
-                    <div class="navbar mg">
-                        <div class="navbar-logo ">
-                            <img src="./assets/img/logo/logo_navbar.png" alt="" class="logo-navbar">  
-                        </div>
-                        <ul class="nav navbar-right  ">
-                            <li><a href="#features">Features</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#pricing">Pricing</a></li>
-                            <li><a href="#reviews">Reviews</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                        <!-- Mobile menu button -->
+            <div class="row">
+                <div class="navbar mg">
+                    <div class="navbar-logo ">
+                        <img src="./assets/img/logo/logo_navbar.png" alt="" class="logo-navbar">  
+                    </div>
+                    <ul id="nav">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <!-- Mobile menu button -->
                         <div id="mobile-menu" class="mobile-menu-btn">
                             <i class="menu-icon ti-menu"></i>
                         </div> 
-                        <div class="ln-white-navbar"></div>   
-                    </div>
+                    <div class="ln-white-navbar"></div>   
                 </div>
+            </div>
+        </div>
+        <div id="slider">
+            <div class="slider-br">
                 <div class="row ">
-                    <div class="header-left col-half s-col-full ">
+                    <div class="slider-left col-half s-col-full ">
                         <div class="logo-img">
-                            <img src="./assets/img/logo/logo_navbar.png" alt="" class="logo-header"> 
+                            <img src="./assets/img/logo/logo_navbar.png" alt="" class="logo-slider"> 
                         </div>
                         <span class="text-white ">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</span>
                         <div class="line "></div>
-                        <span class="text-header ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean <br> euismod bibendum laoreet. Proin gravida dolor sit amet lacus<br> accumsan et viverra justo commodo.</span><br>
+                        <span class="text-slider ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean <br> euismod bibendum laoreet. Proin gravida dolor sit amet lacus<br> accumsan et viverra justo commodo.</span><br>
                         <input class="btn  mt-16 mb-col-full " type="submit" value="Download">
                     </div>
-                    <div class="header-right col-half text-center">
+                    <div class="slider-right col-half text-center">
                         <div class="text-box">
                             <p class="copy-text text-center">Start Your<a href="#"> FREE</a>  Trial Today</p> 
                             <div class="col col-full">
@@ -60,7 +62,7 @@
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>
         <div id="brand-banel">
             <div class="row ">
@@ -86,7 +88,7 @@
             <!-- Features -->
             <div class="br-col features1">
                 <div id="features" class="row">
-                    <div class="col-60 features1-left s-col-full ">
+                    <div class="col-60 features11-left s-col-full ">
                         <div class="box-features1 mb-col-full ">
                             <button class="tab tab0 tablink axit-color-box  "
                             onclick="openTab(event,'Tab1')">Tab1</button>
@@ -95,14 +97,14 @@
                             <button class="tab tab2 tablink"
                             onclick="openTab(event,'Tab3')">Tab3</button>
                         </div>
-                        <div id="Tab1" class="text-featuress tabb">
+                        <div id="Tab1" class="text-featuress tabb ">
                             <span class="heading-features1">Tabs with soft transitioning effect.</span><br>
                             <div class="line "></div>
                             <p class="text-features1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean <br>euismod bibendum laoreet. Proin gravida dolor sit amet lacus <br>accumsan et viverra justo commodo. Proin sodales pulvinar tempor.<br> Cum sociis natoque penatibus et magnis dis parturient montes.</p><br>
                             <p class="text-features2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean<br> euismod bibendum laoreet.</p><br>
                             <input class="content-btn text-center mb-col-full" type="submit" value="Call to Action">
                         </div>
-                        <div id="Tab2" class="text-featuress tabb " style="display:none">
+                        <div id="Tab2" class="text-featuress tabb  " style="display:none">
                             <span class="heading-features1">Tab 2 Headline</span><br>
                             <div class="line "></div>
                             <p class="text-features1">Vide augue no quo. Ex gubergren necessitatibus eos, usu munere partem ei, ne dolores scaevola definitionem qui. Nec dolore nostro id. Ad ius scripta complectitur. Vel graeco lobortis conceptam ex. Ut justo eirmod alienum est, te pri quando quaerendum.</p><br>
@@ -122,7 +124,7 @@
             </div>
             <div class="br-col-white features2">
                 <div class="row ">
-                    <div class="col-60 features1-left left mb-col-full ">
+                    <div class="col-60 features2-left left mb-col-full ">
                         <img src="./assets/img/content/image_left_sub_list.png" alt="" class="features2-left-img">
                     </div> 
                     <div class="col-40 features2-right s-col-70 ">
@@ -155,7 +157,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>   
+                    </div> 
                 </div>
             </div>
             <div class="br-col features3">
@@ -193,8 +195,10 @@
                                 </div>
                             </div> 
                             <div class="about-main">
-                                <span class="heading-title-about">Thoughtful Design</span>
-                                <p class="text-title-about mt-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+                                <span  span class="heading-title-about">Thoughtful Design</span>
+                                <div class="paragraph">
+                                    <p class="text-title-about mt-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+                                </div>
                             </div>
                         </div>
                         <div class="col col-third about-box s-col-full ">
@@ -204,8 +208,10 @@
                                 </div>
                             </div>
                             <div class="about-main">
-                                <span class="heading-title-about">Well Crafted</span>
-                                <p class="text-title-about mt-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+                                <span class="heading-title-about">Well Crafted</span>                                
+                                <div class="paragraph">
+                                    <p class="text-title-about mt-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+                                </div>
                             </div>
                         </div>
                         <div class="col col-third about-box s-col-full">
@@ -215,8 +221,10 @@
                                 </div>
                             </div>
                             <div class="about-main ">
-                                <span class="heading-title-about">Easy to Customize</span>
-                                <p class="text-title-about mt-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+                                <span  span class="heading-title-about">Easy to Customize</span>
+                                <div class="paragraph">
+                                    <p class="text-title-about mt-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -231,55 +239,55 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </span>
                     <div class="col-row pricing-box">
-                        <div class="col col-third box-p1 mb-col-full mb-box">
-                            <p class="pricing-name width-box">Basic</p>
+                        <div class="col col-third box-p box-p1 mb-col-full mb-box">
+                            <p class="pricing-name">Basic</p>
                             <div class="ln-white-box "></div> 
-                            <p  class="pricing-number width-box">
+                            <p  class="pricing-number">
                                 <span class="dolla">$</span>
                                 <span class="number">0</span>
                             </p>
-                            <p class="u1 width-box">Free for Life</p>
-                            <div class="pricing-color width-box"></div>
-                            <p class="text-pricing width-box">1 GB OF SPACE</p>
-                            <p class="text-pricing width-box" >10 GB OF BANDWIDTH</p>
-                            <p class="text-pricing width-box">3 WEBSITES</p>
-                            <p class="text-pricing width-box">BASIC CUSTOMIZATION</p>
-                            <p class="text-pricing width-box">WORDPRESS INTEGRATION</p>
-                            <p class="text-pricing width-box">EMAIL SUPPORT</p>
+                            <p class="u1">Free for Life</p>
+                            <div class="pricing-color"></div>
+                            <p class="text-pricing">1 GB OF SPACE</p>
+                            <p class="text-pricing" >10 GB OF BANDWIDTH</p>
+                            <p class="text-pricing">3 WEBSITES</p>
+                            <p class="text-pricing">BASIC CUSTOMIZATION</p>
+                            <p class="text-pricing">WORDPRESS INTEGRATION</p>
+                            <p class="text-pricing">EMAIL SUPPORT</p>
                         
                         </div>
-                        <div class="col col-third box-p2 mb-col-full mb-box">
-                            <p class="pricing-name pcs  width-box">Professional</p>
+                        <div class="col col-third box-p box-p2 mb-col-full mb-box">
+                            <p class="pricing-name pcs ">Professional</p>
                             <div class="ln-white-box"></div>
-                            <p  class="pricing-number width-box">
+                            <p  class="pricing-number">
                                 <span class="dolla">$</span>
                                 <span class="number">19</span>
                             </p>
-                            <p class="u1 width-box">Monthly Payment</p>
-                            <div class="pricing-color-text width-box">OUR MOST POPULAR</div>
-                            <p class="text-pricing width-box">5 GB OF SPACE</p>
-                            <p class="text-pricing width-box " >50 GB OF BANDWIDTH</p>
-                            <p class="text-pricing width-box">12 WEBSITES</p>
-                            <p class="text-pricing width-box">ADVANCED CUSTOMIZATION</p>
-                            <p class="text-pricing width-box">WORDPRESS INTEGRATION</p>
-                            <p class="text-pricing width-box">EMAIL SUPPORT</p>
+                            <p class="u1">Monthly Payment</p>
+                            <div class="pricing-color-text">OUR MOST POPULAR</div>
+                            <p class="text-pricing">5 GB OF SPACE</p>
+                            <p class="text-pricing " >50 GB OF BANDWIDTH</p>
+                            <p class="text-pricing">12 WEBSITES</p>
+                            <p class="text-pricing">ADVANCED CUSTOMIZATION</p>
+                            <p class="text-pricing">WORDPRESS INTEGRATION</p>
+                            <p class="text-pricing">EMAIL SUPPORT</p>
                         
                         </div>
-                        <div class="col col-third box-p3 mb-col-full mb-box">
-                            <p class="pricing-name width-box">Enterprise</p>
+                        <div class="col col-third box-p box-p3 mb-col-full mb-box">
+                            <p class="pricing-name">Enterprise</p>
                             <div class="ln-white-box"></div>
-                            <p  class="pricing-number width-box">
+                            <p  class="pricing-number">
                                 <span class="dolla">$</span>
                                 <span class="number">70</span>
                             </p>
-                            <p class="u1 width-box">Monthly Payment</p>
-                            <div class="pricing-color width-box"></div>
-                            <p class="text-pricing width-box">UNLIMITED SPACE</p>
-                            <p class="text-pricing width-box" >UNLIMITED BANDWIDTH</p>
-                            <p class="text-pricing width-box">100 WEBSITES</p>
-                            <p class="text-pricing width-box">ADVANCED CUSTOMIZATION</p>
-                            <p class="text-pricing width-box">WORDPRESS INTEGRATION</p>
-                            <p class="text-pricing width-box">24/7 CUSTOMER SUPPORT</p>
+                            <p class="u1">Monthly Payment</p>
+                            <div class="pricing-color"></div>
+                            <p class="text-pricing">UNLIMITED SPACE</p>
+                            <p class="text-pricing" >UNLIMITED BANDWIDTH</p>
+                            <p class="text-pricing">100 WEBSITES</p>
+                            <p class="text-pricing">ADVANCED CUSTOMIZATION</p>
+                            <p class="text-pricing">WORDPRESS INTEGRATION</p>
+                            <p class="text-pricing">24/7 CUSTOMER SUPPORT</p>
                         </div>
                     </div>
                 </div>
@@ -397,59 +405,73 @@
         </div>
         <div id="footer">
             <div class="row">
-                <div class="socials-list-footer">
-                    <a href=""><i class="ti-facebook"></i></a>
-                    <a href=""><i class="ti-twitter "></i></a>
-                    <a href=""><i class="ti-google"></i></a>
-                    <a href=""><i class="ti-pinterest-alt"></i></a>
-                    <a href=""><i class="ti-instagram"></i></a>
-                    <a href=""><i class="ti-flickr-alt"></i></a>
-                    <a href=""><i class="ti-rss-alt"></i></a>
-                    <div class="text-footer">
-                        <p class="copytext">© 2016<span href="#"> Axure Themes</span></p>
+                <div class="footer-ft ">
+                    <div class="socials-list-footer text-center">
+                        <a href=""><i class="ti-facebook"></i></a>
+                        <a href=""><i class="ti-twitter "></i></a>
+                        <a href=""><i class="ti-google"></i></a>
+                        <a href=""><i class="ti-pinterest-alt"></i></a>
+                        <a href=""><i class="ti-instagram"></i></a>
+                        <a href=""><i class="ti-flickr-alt"></i></a>
+                        <a href=""><i class="ti-rss-alt"></i></a>
+                        <div class="text-footer text-center">
+                            <p class="copytext">© 2016<span href="#"> Axure Themes</span></p>
+                        </div>
                     </div>
                 </div>
-                
             </div>
         </div>
         <div class="row">
             <div class="default">
-                <button class="scrollToTop"><i class="ti-angle-up "></i></button>
+                <button class="scrollToTop" id="myUp" ><i class="ti-angle-up "></i></button>
             </div>      
         </div>
     </div>
     <script>
 
         // onclick tab
-        function openTab(evt, tabName) {
-          var i, x, tablinks;
-          x = document.getElementsByClassName("tabb");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablink");
-          for (i = 0; i < x.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" axit-color-box", "");
-          }
-          document.getElementById(tabName).style.display = "block";
-          evt.currentTarget.className += " axit-color-box";
-        }
+            function openTab(evt, tabName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("tabb");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" axit-color-box", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " axit-color-box";
+            }
 
         // onclick scrollTop
-        $(window).scroll(function() {
-        if ($(this).scrollTop() > 100) {
-            $('.scrollToTop').fadeIn();
-        } else {
-            $('.scrollToTop').fadeOut();
-        }
-        });
-        $('.scrollToTop').click(function() {
-            $('html, body').animate({
-                scrollTop: 0
-            }, 800);
-            return false;
-        });
+            $(window).scroll(function() {
+            if ($(this).scrollTop() > 500) {
+                $('.scrollToTop').fadeIn();
+            } else {
+                $('.scrollToTop').fadeOut();
+            }
+            });
+            $('.scrollToTop').click(function() {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });  
         
+        // Mobile menu
+        var header=document.getElementById('nav');
+        var mobileMenu =document.getElementById('mobile-menu');
+        var headerDisplay=header.clientDisplay;
+        //Đóng / mở mobile
+        mobileMenu.onclick=function(){
+            var isClosed=header.clientDisplay===headerDisplay;
+            if(isClosed){
+                header.style.display='block';
+            }else{
+                header.style.display='none';
+            }  
+        }
     </script>
 
 </body>
