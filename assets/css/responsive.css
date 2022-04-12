@@ -1,6 +1,6 @@
 /* PC */
 @media only screen and(min-width:1024px){
-    
+   
 }
 /* Tablet */
 @media(min-width:740px) and(max-width:1023px){
@@ -200,6 +200,9 @@
     .mb-col-full{
         width: 100% !important;
     }
+    #content .features11-left{
+        display: block;
+    }
     /* header */
     #header .navbar-logo{
         display: block;
@@ -211,7 +214,8 @@
         display:none;
         position: initial; 
         z-index: 99 !important;
-    } 
+    }  
+      
     #nav li{
         position: relative;
         display: contents;
@@ -222,15 +226,18 @@
         display: block;
         width: 100%;
         float: left;
-        padding-left: 50px;
-        line-height: 50px;
-    }
+        padding-left: 43px;
+        line-height: 45px;
+    } 
     .text-white{
         width: 280px;
         height: 84px;
     }
     .logo-slider{
-        display: block; 
+        display:block; 
+    }
+    .navbar{
+        z-index: 5;
     }
     
     #brand-banel .heading-pane{
@@ -245,9 +252,6 @@
     }
 
     /*slider  */
-    .slider-left{
-        margin-top: 10%;
-    }
     .text-slider{
         width: 280px;
         height: 92px;
@@ -366,14 +370,15 @@
         margin-top: 4%;
     } 
     #stylish{
-        height: 352px;
+        height: auto;
     }
     .stylish-br{
-        height: 352px;
+        height: auto;
     }
 
     #pricing{
-        height: 1738px;
+        height: auto;
+        padding-bottom: 10%;
     }
     #pricing .pricing-box{
         margin: 0 21%;

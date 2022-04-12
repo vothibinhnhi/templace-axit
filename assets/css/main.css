@@ -80,8 +80,7 @@ html{
     margin-top: 20px; 
     margin-left: 150px;
 }
-#nav{
-    
+#nav{  
     float:right ;
     margin-right: 10%;
     display:inline-block;
@@ -112,6 +111,7 @@ html{
     float:right ;
     margin-right: 150px;
 }
+
 .ln-white-navbar{
     height: 1px;
     overflow: hidden;
@@ -124,6 +124,7 @@ html{
     left: 0;
     right: 0;
     position: relative;
+    height: 72px;
 }
 .line{
     width: 65px;
@@ -213,6 +214,10 @@ html{
 }
 #header .mobile-menu-btn:hover .menu-icon{
     color: #000;
+}
+
+.nav_acvite{
+    display: block !important;
 }
 
 /* slider */
@@ -352,9 +357,9 @@ html{
     left: 0;
     top: 0;
     padding-top: 8%;
-    
-    /* display: flex;
-    justify-content: space-around; */
+    display: flex;
+    justify-content: space-around;
+   
 }
 
 #content .box-features1{
@@ -424,6 +429,9 @@ html{
     top: 0;
     float: right;
     margin-top: 10%;
+}
+#content .features2-right{
+    
 }
 #stylish .btn, 
 .slider-left  .btn{
