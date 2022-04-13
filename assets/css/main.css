@@ -37,7 +37,6 @@ html{
     padding-right: -16px;
 }
 .col{
-    float: left;
     padding-left: 16px;
     padding-right: 16px;
 }
@@ -82,7 +81,7 @@ html{
 }
 #nav{  
     float:right ;
-    margin-right: 10%;
+    margin-right: 10px;
     display:inline-block;
     list-style-type: none;
     min-width: 160px;
@@ -233,6 +232,7 @@ html{
     left: 0px;
     right: 0px;
     bottom: 0px;
+    padding: 65px 0 65px 0;
 }
 .logo-slider{
     left: 0;
@@ -242,7 +242,7 @@ html{
 }
 #slider .slider-left{
     float: left;
-    padding-top: 15%;
+    padding-top: 45px;
 }
 .text-slider{
     width: 520px;
@@ -263,7 +263,7 @@ html{
     border: none;
     border-radius: 5px;
     float: right;
-    margin-top: 15%;
+    margin-top: 45px;
 }
 
 
@@ -303,6 +303,12 @@ html{
     font-size: 20px;
     text-align: left; 
 }
+.about-row{
+    display: flex;
+    flex-direction: row;
+    margin: 45px 0 45px 0;
+}
+
 #content .text-features1,
 #content .text-features2,
 #brand-banel .text-pane{
@@ -342,21 +348,20 @@ html{
     top: 0;
     margin-left: auto;
     margin-right: auto;
-
+    
 }
 #content .features3-left,
 #content .features1-left{
     float: left;
     left: 0;
     top: 0;
-    margin-top: 8%;
+    padding-top: 45px;
 }
 
 #content .features11-left{
     float: left;
     left: 0;
     top: 0;
-    padding-top: 8%;
     display: flex;
     justify-content: space-around;
    
@@ -423,19 +428,17 @@ html{
     margin-top: 25px;
     margin-bottom: 25px;
 }
-#content .features2-right,
 #content .features1-right{
     left: 0;
     top: 0;
     float: right;
-    margin-top: 10%;
 }
-#content .features2-right{
-    
+.features2-left-img{
+    margin-left: 0px;
 }
 #stylish .btn, 
 .slider-left  .btn{
-    margin-bottom: 20%;
+    padding-top: 45px;
     color: #fff;
     background: none;
     border: 2px solid #fff;
@@ -455,13 +458,10 @@ html{
     margin-right: auto;
 }
 #content .features1{
-    padding-bottom: 10%;
+    padding: 65px 0 65px 0;
 }
 /* features2 */
-.features2-left-img{
-    margin:10% -8% 10% 0;
-    
-}
+
 .features2-right-img{
     left: -50px;
     top: -30px;
@@ -533,9 +533,8 @@ html{
 
 /* /About  */
 #about {
-    height: 592px;
+    padding: 65px 0 65px 0;
     text-align: center;
-    padding-top: 8%;
 }
 .heading-about,
 .heading-stylish{
@@ -548,11 +547,16 @@ html{
     text-align: center;
     line-height: 43px;
 }
+.line-orange{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 20px 0; 
+}
 .line-center{
     width: 64px;
     height: 2px;
     background-color: #ff8b38;
-    margin: 2% 0 2% 47% ;
 }
 .text-stylish{
     color: rgba(255, 255, 255, 0.8);
@@ -607,7 +611,6 @@ html{
     font-weight: 700;
 }
 .text-title-about{
-    height: 60px;
     position: relative;
     font-family: 'Open Sans Regular', 'Open Sans';
     color: #86878B;
@@ -622,14 +625,14 @@ html{
 }
 
 /* Pricing */
-#pricing {
-    height: 883px;
-    padding-top: 8%;
+#pricing { 
+    padding: 65px 0 65px 0;
     text-align: center;
 }
-#pricing .pricing-box{
-    display: block;
-    margin-top: 8%;
+.fix-box{
+    display: flex;
+    flex-direction: row;
+    margin-top: 45px;
 }
 .pricing-name{
     height: 59px;
@@ -705,16 +708,13 @@ html{
 }
 /* Reviews */
 #reviews {
-    height: 591px;
-    padding-top: 8%;
+    padding-bottom: 55px;
+    padding-top: 35px;
     text-align: center !important;
 }
-#reviews .member{
-    margin-top: 8%;
-}
+
 .box-description{
-    
-    height: 132px;
+    padding-bottom: 25px;
     background: inherit;
     background-color: rgba(245, 245, 245, 1);
     border-radius: 2px;
@@ -729,7 +729,6 @@ html{
     margin-left:  16px;
     padding-top:  18px;
     max-width: 240px;
-    height: 95px;
     text-align: left; 
 }
 .img-avt{
@@ -772,24 +771,21 @@ html{
     margin-left: 25px;
 }
 #stylish{
-    height: 320px;
     color: #fff;
     text-align: center;
     background: url('../img/custom-panel.jpg') top center/cover no-repeat ;
     background-attachment: fixed;
 }
 .stylish-br{
-    /* position: absolute; */
     background-color:rgba(0, 0, 0, 0.498039215686275);
     height: 320px;
 }
 .main-stylish-text{
-    padding-top: 6%;
+    padding: 65px 0 65px 0;
 }
 /* Contact */
 #contact {
-    height: 612px;
-    padding-top: 8%;
+    padding: 65px 0 65px 0;
     text-align: center;
 }
 .contact-left{
@@ -846,7 +842,6 @@ html{
 .contact-btn{
     left: 0px;
     top: 0px;
-    float: left;
     color: #fff;
     background-color: rgba(255, 139, 56, 1);
     width: 152px;
@@ -862,9 +857,7 @@ html{
     opacity: 0.9;
     cursor: pointer;
 }
-/* input:focus{
-    border-color: #ff8b38;
-} */
+
 /* footer  */
 #footer{
     background-color: rgba(0,0,0, 1);
@@ -872,14 +865,11 @@ html{
     margin-right: auto;
 }
 #footer .socials-list-footer{   
-    text-align: center;
     padding-top: 30px;
-    margin-left: 25%;
 }
 .footer-ft {
-    text-align: center;
-    margin-right: 13%;
-    margin-bottom: 2%;
+    text-align: center !important;
+    
 }
 #footer .socials-list-footer a{
     padding: 15px;
@@ -919,7 +909,7 @@ html{
 #myUp{  
     display: none;
     position: fixed;
-    bottom: 77px;
+    bottom: 56px;
     right: 30px;
     z-index: 99;
     font-size: 18px;

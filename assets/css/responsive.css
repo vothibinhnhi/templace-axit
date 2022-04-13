@@ -73,14 +73,12 @@
         width: 80px;
         height: 80px;
     }
-    .line-center{
-        margin-top: 3%;
-        margin-bottom: 3%;
-        margin-left: 45%;
-    }
     /* features */
     .features1-right{
         display: none;
+    }
+    #about .fix-box{
+        display: block;
     }
     .features-right-img{
         width: 126.2%;
@@ -181,10 +179,7 @@
     .contact-btn{
        margin-left: 0%;
     }
-    /* footer */
-    #footer .socials-list-footer{
-       margin-left: 18%;
-    }
+   
 }
 
 /* Mobile */
@@ -347,18 +342,21 @@
     .heading-about{
         font-size: 22px;
     }
-
-    /* pricing */
-    .pricing-box{
+    .fix-box{
         display: block;
+    }
+    /* pricing */
+    #pricing .fix-box{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .box-p2{
         margin: 8% 0 4% 0;
         text-align: center;
     }
-    .mb-box{
-       margin-left: 7%;
-    } 
+    
     #reviews{
         height: 797px;
     }
@@ -379,13 +377,11 @@
     #pricing{
         height: auto;
         padding-bottom: 10%;
-    }
-    #pricing .pricing-box{
-        margin: 0 21%;
+       
     }
 
    #contact{
-      margin-bottom: 35%;
+      margin-bottom: 65px;
    }
     #footer{
         padding-bottom: 10px;
