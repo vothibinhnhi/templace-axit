@@ -48,7 +48,7 @@
         height: 37px;
     }
     .slider-left{
-        padding-top: 25%;
+        padding-top: 55px;
     }
     .slider-right{
         display: none;
@@ -56,12 +56,9 @@
     .text-pane{
         display: none;
     }
-    .pane-state-right{
-      
-    }
     #brand-banel .heading-pane{
         max-width: 124px;
-        margin-top: 5%;
+        margin-top: 20px;
     }
     .socials-list {
        font-size: 34px;
@@ -81,17 +78,14 @@
         display: block;
     }
     .features-right-img{
-        width: 126.2%;
         height: 403px;
-        margin-left: 3%;
+        margin-left: 35px;
         object-fit: fill;
     }
+    
     .features1-right{
         display: none;
     }
-    #content .features1-left{
-        margin-top: 10%;
-     }
     #content .features2{
         height: 772px;
     }
@@ -108,7 +102,7 @@
     #content .features2-left-img{
         position: relative; 
         left: 15em;
-        margin-top: 75%;
+        margin-top: 420px;
         width: 459px;
         height: 340px;
     }
@@ -127,7 +121,7 @@
     /* about */
     #about{
         height: auto;
-        padding-top: 15%;
+        padding-top: 65px;
     }
     .text-title-about{
         margin-bottom: 4em;
@@ -137,9 +131,6 @@
     /* pricing */
     .box-p{
         max-width: 335px;
-    }
-    .box-p1, .box-p3{
-        margin-top: 5.2%;
     }
     .pricing-name{   
         height: 59px;
@@ -168,19 +159,20 @@
     /* contact */
     #contact{
         height: auto;
-        margin-bottom: 5%;
+        margin-bottom: 65px;
     }
     .col-contact{
-        padding-right: 0% ;
+        padding-right: 0;
     }
     .box-right{
-        margin-left: 0%;
+        margin-left: 0;
     }
     .contact-btn{
-       margin-left: 0%;
+       margin-left: 0;
     }
-   
 }
+
+
 
 /* Mobile */
 @media(max-width:740px){
@@ -234,43 +226,48 @@
     .navbar{
         z-index: 5;
     }
-    
+    #brand-banel{
+        display: block;
+    }
     #brand-banel .heading-pane{
         width: 176px;
         height: 22px;
-        margin-top: -3%;
-        margin-left: 30%;
+        margin-top: -35px;
+        margin-left: 126px;
     }
     #header .mobile-menu-btn{
         display: block;
         margin-top: 12px;
     }
-
+    #brand-banel .pane-state-left{
+        padding-top: 57px;
+    }
     /*slider  */
     .text-slider{
-        width: 280px;
-        height: 92px;
+       
         font-size: 14px;
     }
     .slider-left .btn{
-        margin-top: 44%;
+        margin-top: 5em;
+        margin-bottom: 5em;
     }
     /* brand-banel */
     #brand-banel{
         max-width: 404px;
-        height: 118px;
     }
-    .pane-state-left{
-        margin-left: 4%;
+    .fixbox-mb{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .socials-list {
         display: flex;
-        font-size: 28px;
-        margin-top: -10%;
-        margin-left: 2%;
+        font-size: 28px; 
+        margin-top: 4em;
+        margin-left:-9em; 
      }
     .socials-list a{
-        margin-top: 9%;
+        /* margin-top: 9%; */
         padding: 10px;
     }
 
@@ -282,7 +279,7 @@
         font-size: 14px;
     }
     #content .box-features1{
-        margin-bottom: 7%;
+        margin-bottom:35px;
         margin-left: 30px;
     }
     #content .tab1{
@@ -300,7 +297,7 @@
         font-size: 16px;
     }
     .heading-title{
-        margin-left: 10%;
+        margin-left: 45px;
     }
     .content-title{
         margin-top: 1.5em;
@@ -308,7 +305,7 @@
     .features1-left .features2-left-img{
         width: 380px;
         height: 287px;
-        left: -18%;
+        left: -35px;
         top: 485px;
         object-fit: contain;
     }
@@ -316,7 +313,7 @@
         width: 380px;
         height: 287px;
         left: 2em;
-        margin-top: 60%;
+        margin-top:455px;
     }
     .paragraph{
         display: flex;
@@ -331,18 +328,22 @@
         margin-left: 30px;
     }
     .features3-right{
-        margin-top: 10%;
+        margin-top: 45px;
         width: 380px; height: 287px;
     }
     .features-right-img{
-        margin-top: -17%;
-        margin-bottom: -10%;
+        margin-top: -135px;
         object-fit: contain;
+        width: 380px;
+        height: 287px;
     }
     .heading-about{
         font-size: 22px;
     }
     .fix-box{
+        display: block;
+    }
+    .about-row{
         display: block;
     }
     /* pricing */
@@ -353,36 +354,12 @@
         align-items: center;
     }
     .box-p2{
-        margin: 8% 0 4% 0;
+        margin-top: 30px;
         text-align: center;
-    }
-    
-    #reviews{
-        height: 797px;
-    }
-    .description{
-        margin-top: 4%;
     }
     .box-description {
         text-align: center;
-        margin-top: 4%;
     } 
-    #stylish{
-        height: auto;
-    }
-    .stylish-br{
-        height: auto;
-    }
-
-    #pricing{
-        height: auto;
-        padding-bottom: 10%;
-       
-    }
-
-   #contact{
-      margin-bottom: 65px;
-   }
     #footer{
         padding-bottom: 10px;
         margin-top: 92px;
