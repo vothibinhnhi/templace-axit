@@ -81,7 +81,7 @@ html{
 }
 #nav{  
     float:right ;
-    margin-right: 10px;
+    margin-right: 133px;
     display:inline-block;
     list-style-type: none;
     min-width: 160px;
@@ -180,6 +180,7 @@ html{
     padding: 1px 0px 1px 0px;
 }
 .text-box .btn{
+    cursor: pointer;
     color: #fff;
     background: inherit;
     border: 2px solid #ff8b38;
@@ -449,6 +450,7 @@ html{
     font-weight: 600;
     margin-top: 32px;
     font-size: 15px;
+    cursor: pointer;
 }
 .slider-left  .btn:hover,
 #stylish .btn:hover{
@@ -946,4 +948,9 @@ html{
 .default:hover{
     display: block;
     opacity: 0.9;
+}
+
+*:focus {
+    outline: 0;
+    /* outline-color: #ff8b38; */
 }

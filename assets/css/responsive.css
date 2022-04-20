@@ -312,7 +312,7 @@
     #content .features2-left-img{
         width: 380px;
         height: 287px;
-        left: 2em;
+        left: 5em;
         margin-top:455px;
     }
     .paragraph{
@@ -333,7 +333,9 @@
     }
     .features-right-img{
         margin-top: -135px;
+        display: flex;
         object-fit: contain;
+        margin-left: 5rem;
         width: 380px;
         height: 287px;
     }
